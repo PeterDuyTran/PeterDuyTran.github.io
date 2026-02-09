@@ -1,0 +1,61 @@
+# section information
+section:
+  name: About
+  id: about
+  enable: true
+  weight: 1
+  showOnNavbar: true
+  template: sections/about.html
+
+# your designation
+designation: Lead Gameplay Engineer
+
+# your company information
+company:
+  name:
+  url:
+
+# your resume (place file in static/files/)
+resume: "files/resume.pdf"
+
+# summary about yourself
+summary: |
+  Lead Gameplay Engineer on **Huli: Nine Tails of Vengeance** — an action RPG built on
+  Unreal Engine 5.7 targeting PC, PS5, and Xbox Series X. I architect and implement
+  core combat systems, AI frameworks, and plugin infrastructure for a combat-driven
+  gameplay experience.
+
+  Previously shipped **6 mobile titles** (iOS/Android) as a Unity/C# developer,
+  covering hyper-casual, puzzle, and simulation genres with App Store and Google Play releases.
+
+  My technical focus areas include:
+  - **Combat Architecture**: Custom GAS implementation with 7-stage damage pipeline, direction-aware parry, and visual combo editor
+  - **AI Frameworks**: Hybrid State Tree + Behavior Tree system supporting 50+ concurrent entities at locked 60 FPS
+  - **Plugin Infrastructure**: 19+ custom plugins following a strict three-tier dependency architecture
+  - **Performance Engineering**: Console-grade optimization with async loading, AI LOD, and time-sliced coordination
+
+# social links
+socialLinks:
+  - name: Github
+    icon: "fab fa-github"
+    url: "https://github.com/tnqduy"
+
+  - name: LinkedIn
+    icon: "fab fa-linkedin"
+    url: ""
+
+  - name: Email
+    icon: "fas fa-envelope"
+    url: ""
+
+# soft skills (shown as circular badges)
+softSkills:
+  - name: Problem Solving
+    percentage: 90
+    color: "#6c5ce7"
+  - name: Team Collaboration
+    percentage: 85
+    color: "#00cec9"
+  - name: Communication
+    percentage: 80
+    color: "#fd79a8"

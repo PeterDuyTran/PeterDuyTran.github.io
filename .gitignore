@@ -1,0 +1,22 @@
+# Tooling / binaries
+go/
+gopath/
+nodejs/
+hugo-bin/
+hugo-new/
+
+# Build output
+site/public/
+site/resources/
+
+# Node
+node_modules/
+
+# OS artifacts
+nul
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Claude Code
+.claude/

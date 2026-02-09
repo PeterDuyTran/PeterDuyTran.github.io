@@ -1,0 +1,95 @@
+# section information
+section:
+  name: Projects
+  id: projects
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  template: sections/projects.html
+
+# filter buttons
+buttons:
+  - name: All
+    filter: "all"
+  - name: Combat
+    filter: "combat"
+  - name: AI
+    filter: "ai"
+  - name: Architecture
+    filter: "architecture"
+  - name: Mobile
+    filter: "mobile"
+
+# projects
+projects:
+  - name: "Huli: Nine Tails of Vengeance"
+    # image: images/projects/huli-thumb.png
+    role: Lead Gameplay Engineer
+    timeline: "2024 - Present"
+    url: "/posts/huli-technical-showcase"
+    summary: |
+      Action RPG built on Unreal Engine 5.7 targeting PC, PS5, and Xbox Series X.
+      Led development of combat architecture (GAS, 7-stage damage pipeline, direction-aware parry),
+      hybrid AI framework (50+ concurrent entities at 60 FPS), and 19+ custom plugins
+      powering a modular, scalable gameplay foundation.
+    tags: ["combat", "ai", "architecture"]
+
+  - name: Register Race
+    image: images/projects/port_registerace_01.png
+    role: Game Developer
+    timeline: "Shipped"
+    url: "/posts/mobile-register-race"
+    summary: |
+      3D casual mobile game where players join as a cashier and race against others.
+      Built with Unity/C# for iOS and Android.
+    tags: ["mobile"]
+
+  - name: 2048 Park
+    image: images/projects/port_2048_01.png
+    role: Game Developer
+    timeline: "Shipped"
+    url: "/posts/mobile-2048-park"
+    summary: |
+      A collection of 2048 puzzle game variants. Multiple game modes
+      offering fresh takes on the classic 2048 formula.
+    tags: ["mobile"]
+
+  - name: Climber
+    image: images/projects/port_climber_01.png
+    role: Game Developer
+    timeline: "Shipped"
+    url: "/posts/mobile-climber"
+    summary: |
+      In-house climbing wall simulation 3D game. Players attempt to reach the finish
+      goal without falling, featuring physics-based climbing mechanics.
+    tags: ["mobile"]
+
+  - name: Assorted Detective
+    image: images/projects/port_detective_01.png
+    role: Game Developer
+    timeline: "Shipped"
+    url: "/posts/mobile-assorted-detective"
+    summary: |
+      2D hidden-object puzzle game challenging players to find requested items
+      across increasingly complex scenes.
+    tags: ["mobile"]
+
+  - name: Assassin
+    image: images/projects/port_assasin_01.png
+    role: Game Developer
+    timeline: "Shipped"
+    url: "/posts/mobile-assassin"
+    summary: |
+      3D puzzle assassination game where players must eliminate enemies and
+      save allies using limited resources and strategic planning.
+    tags: ["mobile"]
+
+  - name: Clay Art
+    image: images/projects/port_clayart_01.png
+    role: Game Developer
+    timeline: "Shipped"
+    url: "/posts/mobile-clay-art"
+    summary: |
+      ASMR-style mobile game where players arrange parts onto a clay cube
+      and enjoy satisfying cutting mechanics. Built with Unity/C#.
+    tags: ["mobile"]

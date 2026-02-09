@@ -1,0 +1,35 @@
+# section information
+section:
+  name: Skills
+  id: skills
+  enable: true
+  weight: 2
+  showOnNavbar: true
+  template: sections/skills.html
+
+# skills
+skills:
+  - name: Unreal Engine 5.7
+    # logo: /images/skills/ue5-logo.png
+    summary: "Custom engine modifications, Live Coding workflows, and cross-platform shipping (PC/PS5/Xbox Series X)."
+    url: "https://www.unrealengine.com/"
+
+  - name: C++
+    # logo: /images/skills/cpp-logo.png
+    summary: "Performance-critical gameplay code — 20k+ line character classes, template metaprogramming, and async patterns."
+
+  - name: Gameplay Ability System
+    # logo: /images/skills/gas-logo.png
+    summary: "Custom ASC with ability data queueing, 7 attribute sets, dynamic cost/cooldown, and a 7-stage damage execution pipeline."
+
+  - name: AI Systems
+    # logo: /images/skills/ai-logo.png
+    summary: "Hybrid State Tree + Behavior Tree framework with coordinator patterns, formation management, and 50+ concurrent AI at 60 FPS."
+
+  - name: Combat Architecture
+    # logo: /images/skills/combat-logo.png
+    summary: "Universal damage pipeline, direction-aware parry, visual combo graph editor, and animation notify-driven hitbox system."
+
+  - name: Plugin Development
+    # logo: /images/skills/plugin-logo.png
+    summary: "19+ custom plugins following a three-tier dependency architecture (Generic, MainGame, GameFeature) with editor tooling."

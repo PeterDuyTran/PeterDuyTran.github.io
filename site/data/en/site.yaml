@@ -1,0 +1,13 @@
+# Copyright Notice
+copyright: "\u00A9 2026 Duy Tran. All rights reserved."
+
+# Meta description for search engines
+description: "Duy Tran — Lead Gameplay Engineer. Huli: Nine Tails of Vengeance. Combat systems, AI frameworks, and plugin architecture on Unreal Engine 5.7 (PC/PS5/Xbox)."
+
+# OpenGraph Headers (for social sharing)
+openGraph:
+  title: "Duy Tran — Lead Gameplay Engineer"
+  type: website
+  description: "Combat systems, AI frameworks, and plugin architecture on Unreal Engine 5.7."
+  image: images/author/avatar.png
+  url: http://localhost:1313
