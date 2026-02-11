@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Theme Switcher</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { display: flex; flex-direction: column; background: #1a1a2e; }
+
+    .toolbar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 16px;
+      background: #16213e;
+      border-bottom: 1px solid #0f3460;
+      flex-shrink: 0;
+    }
+
+    .toolbar-label {
+      color: #a0a0b0;
+      font-size: 13px;
+      margin-right: 4px;
+      white-space: nowrap;
+    }
+
+    .toolbar button {
+      padding: 6px 14px;
+      border: 1px solid #0f3460;
+      border-radius: 6px;
+      background: #1a1a2e;
+      color: #e0e0e0;
+      font-size: 13px;
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s;
+    }
+
+    .toolbar button:hover {
+      background: #0f3460;
+      border-color: #533483;
+    }
+
+    .toolbar button.active {
+      background: #533483;
+      border-color: #9b59b6;
+      color: #fff;
+    }
+
+    .port-info {
+      margin-left: auto;
+      color: #707080;
+      font-size: 12px;
+      font-family: monospace;
+    }
+
+    iframe {
+      flex: 1;
+      border: none;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <span class="toolbar-label">Theme:</span>
+    <button data-port="1313" class="active">Toha</button>
+    <button data-port="1314">Blowfish</button>
+    <button data-port="1315">PaperMod</button>
+    <button data-port="1316">Congo</button>
+    <button data-port="1317">Terminal</button>
+    <button data-port="1318">Coder</button>
+    <span class="port-info" id="portInfo">localhost:1313</span>
+  </div>
+  <iframe id="preview" src="http://localhost:1313/"></iframe>
+
+  <script>
+    const buttons = document.querySelectorAll('.toolbar button');
+    const iframe = document.getElementById('preview');
+    const portInfo = document.getElementById('portInfo');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        buttons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const port = btn.dataset.port;
+        iframe.src = `http://localhost:${port}/`;
+        portInfo.textContent = `localhost:${port}`;
+      });
+    });
+  </script>
+</body>
+</html>
