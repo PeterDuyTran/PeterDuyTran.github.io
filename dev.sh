@@ -6,11 +6,11 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 # Theme definitions: name|directory|port
 THEMES=(
   "Toha|site|1313"
-  "Blowfish|site-blowfish|1314"
+  "Typo|site-typo|1314"
   "PaperMod|site-papermod|1315"
-  "Congo|site-congo|1316"
-  "Terminal|site-terminal|1317"
-  "Coder|site-coder|1318"
+  "Paper|site-paper|1316"
+  "Risotto|site-risotto|1317"
+  "Anatole|site-anatole|1318"
 )
 
 PIDS=()
@@ -41,6 +41,11 @@ for entry in "${THEMES[@]}"; do
   if [[ ! -d "$site_path" ]]; then
     echo "  SKIP  $name — directory $dir/ not found"
     continue
+  fi
+  # Clean stale public dir (fixes read-only permission issues)
+  if [[ -d "$site_path/public" ]]; then
+    chmod -R u+w "$site_path/public" 2>/dev/null
+    rm -rf "$site_path/public"
   fi
   hugo server -D --navigateToChanged -s "$site_path" -p "$port" &>/dev/null &
   PIDS+=($!)

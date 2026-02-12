@@ -1,0 +1,54 @@
+baseURL: "http://localhost:1317/"
+languageCode: en-us
+title: "Duy Tran"
+theme: anatole
+
+enableEmoji: true
+enableRobotsTXT: true
+
+taxonomies:
+  tag: tags
+  category: categories
+
+params:
+  title: "Duy Tran"
+  author: "Duy Tran"
+  description: "Lead Gameplay Engineer — Huli: Nine Tails of Vengeance"
+  profilePicture: "images/author/avatar.png"
+  mainSections: ["posts"]
+  reversepagetitle: true
+  singleDateFormat: "2 Jan 2006"
+  indexDateFormat: "2 Jan 2006"
+  listDateFormat: "2 Jan 2006"
+
+  socialIcons:
+    - icon: "fa-brands fa-github"
+      title: "GitHub"
+      url: "https://github.com/tnqduy"
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 100
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 200
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 300
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 400
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+pygmentsUseClasses: true
+pygmentsCodeFences: true
