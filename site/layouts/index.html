@@ -200,7 +200,7 @@
 /* Tab panels */
 .tab-panels {
     position: relative;
-    min-height: 60vh;
+    min-height: calc(100vh - 50px);
 }
 
 .tab-panel {
@@ -314,6 +314,14 @@
         tab.addEventListener('click', function(e) {
             e.preventDefault();
             activateTab(this.getAttribute('data-tab'), true);
+            // Keep tab bar in view after switching to a shorter panel
+            var sectionTabs = document.querySelector('.section-tabs');
+            if (sectionTabs) {
+                var rect = sectionTabs.getBoundingClientRect();
+                if (rect.top < 0 || rect.top > 0) {
+                    sectionTabs.scrollIntoView({ behavior: 'instant', block: 'start' });
+                }
+            }
         });
     });
 
