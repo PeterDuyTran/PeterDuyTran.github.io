@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Combat on Duy Tran — Lead Gameplay Engineer</title>
+    <link>http://localhost:1317/tags/combat/</link>
+    <description>Recent content in Combat on Duy Tran — Lead Gameplay Engineer</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1317/tags/combat/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Huli: Nine Tails of Vengeance — Technical Deep Dive</title>
+      <link>http://localhost:1317/posts/huli-technical-showcase/</link>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1317/posts/huli-technical-showcase/</guid>
+      <description>&lt;div style=&#34;background:#1a1a2e; color:#e0e0e0; padding:1.5em 2em; border-radius:8px; margin-bottom:2em;&#34;&gt;&#xA;&lt;p&gt;&lt;strong&gt;Role:&lt;/strong&gt; Lead Gameplay Engineer  |  &lt;strong&gt;Engine:&lt;/strong&gt; Unreal Engine 5.7  |  &lt;strong&gt;Platforms:&lt;/strong&gt; PC, PS5, Xbox Series X&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Huli: Nine Tails of Vengeance&lt;/strong&gt; is a combat-driven Action RPG featuring deep melee combat, AI-coordinated enemy encounters, and a modular plugin architecture built for scalability. This page walks through the core technical systems I designed and implemented.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;architecture-overview&#34;&gt;Architecture Overview&lt;/h2&gt;&#xA;&lt;p&gt;The project is built on a &lt;strong&gt;three-tier modular plugin architecture&lt;/strong&gt; that enforces clean dependency boundaries and supports independent iteration across teams.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

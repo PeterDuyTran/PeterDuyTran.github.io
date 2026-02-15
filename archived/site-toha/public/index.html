@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta name="generator" content="Hugo 0.155.3"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Lead Gameplay Engineer — Huli: Nine Tails of Vengeance</title>
+    
+    
+      
+      
+        
+      
+    
+    <meta name="description" content="Duy Tran — Lead Gameplay Engineer. Huli: Nine Tails of Vengeance. Combat systems, AI frameworks, and plugin architecture on Unreal Engine 5.7 (PC/PS5/Xbox)." />
+    
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+<link rel="stylesheet" href="/application.9da0daed7f341f91cb7b5610bd6b573549272dfcdfc27ab614059d7f2b813400.css" integrity="sha256-naDa7X80H5HLe1YQvWtXNUknLfzfwnq2FAWdfyuBNAA=" />
+
+
+
+
+
+
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="Lead Gameplay Engineer — Huli: Nine Tails of Vengeance">
+
+
+
+
+
+
+
+
+<meta property="og:title" content="Duy Tran — Lead Gameplay Engineer"/>
+<meta property="og:type" content="website"/>
+<meta property="og:description" content="Combat systems, AI frameworks, and plugin architecture on Unreal Engine 5.7."/>
+<meta property="og:image" content="/images/author/avatar.png">
+<meta property="og:url" content="http://localhost:1313">
+
+
+    
+
+
+
+
+
+    <script integrity="sha256-DO4ugzEwhTW1Id1UIWn0gUJWaebCYOypeTit6LW4QB4=">
+     let theme = localStorage.getItem('theme-scheme') || localStorage.getItem('darkmode:color-scheme') || 'light'
+if (theme === 'system') {
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    theme = 'dark'
+  } else {
+    theme = 'light'
+  }
+}
+document.documentElement.setAttribute('data-theme', theme)
+
+    </script>
+    
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#top-navbar" data-bs-offset="100">
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-xl top-navbar shadow transparent-navbar homepage" id="top-navbar">
+  <div class="container">
+    
+    <a class="navbar-brand" href="/">
+      Lead Gameplay Engineer — Huli: Nine Tails of Vengeance</a>
+    <button
+      class="navbar-toggler navbar-dark"
+      id="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#top-nav-items"
+      aria-label="menu"
+    >
+      <i data-feather="menu"></i>
+    </button>
+
+    <div class="collapse navbar-collapse dynamic-navbar" id="top-nav-items">
+      <ul class="nav navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        
+          
+          
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+              
+            
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="#skills">Skills</a>
+                </li>
+              
+            
+            
+              
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="#projects">Projects</a>
+                </li>
+              
+            
+          
+        
+        
+          <div id="top-navbar-divider"></div>
+        
+        
+          <li class="nav-item">
+            <a class="nav-link" id="blog-link" href="/posts">Posts</a>
+          </li>
+        
+        
+        
+        
+        
+          
+
+
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle"  href="#" id="themeSelector" role="button"
+  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <img id="navbar-theme-icon-svg" class="theme-icon" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+</a>
+<div id="themeMenu" class="dropdown-menu dropdown-menu-icons-only" aria-labelledby="themeSelector">
+  
+  <a class="dropdown-item nav-link" href="#" data-scheme="light">
+    <img class="theme-icon" src="/icons/sun-svgrepo-com.svg" width=20 alt="Light Theme">
+  </a>
+  
+  
+  <a class="dropdown-item nav-link" href="#" data-scheme="dark">
+    <img class="theme-icon" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+  </a>
+  
+  
+  <a class="dropdown-item nav-link" href="#" data-scheme="system">
+    <img class="theme-icon" src="/icons/computer-svgrepo-com.svg" width=20 alt="System Theme">
+  </a>
+  
+</div>
+</li>
+
+        
+      </ul>
+    </div>
+  </div>
+  
+  
+  
+  
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid home" id="home">
+  <style>
+     
+    #homePageBackgroundImageDivStyled {
+      background-image: url('/images/site/background_hu_5c33e6e00f4ac6d5.png');
+    }
+
+     
+    @media (min-width: 500px) and (max-width: 800px) {
+
+       
+      #homePageBackgroundImageDivStyled {
+        background-image: url('/images/site/background_hu_9c631594d87e96d5.png');
+      }
+    }
+
+    @media (min-width: 801px) and (max-width: 1200px) {
+
+       
+      #homePageBackgroundImageDivStyled {
+        background-image: url('/images/site/background_hu_35b688c71f0cb970.png');
+      }
+    }
+
+    @media (min-width: 1201px) and (max-width: 1500px) {
+
+       
+      #homePageBackgroundImageDivStyled {
+        background-image: url('/images/site/background_hu_4cf3bd6f878f2bff.png');
+      }
+    }
+
+    @media (min-width: 1501px) {
+
+       
+      #homePageBackgroundImageDivStyled {
+        background-image: url('/images/site/background.png');
+      }
+    }
+
+    html[data-theme='dark'] {
+
+       
+      #homePageBackgroundImageDivStyled {
+        background-image: url('/images/site/background_hu_5c33e6e00f4ac6d5.png');
+      }
+
+       
+      @media (min-width: 500px) and (max-width: 800px) {
+
+         
+        #homePageBackgroundImageDivStyled {
+          background-image: url('/images/site/background_hu_9c631594d87e96d5.png');
+        }
+      }
+
+      @media (min-width: 801px) and (max-width: 1200px) {
+
+         
+        #homePageBackgroundImageDivStyled {
+          background-image: url('/images/site/background_hu_35b688c71f0cb970.png');
+        }
+      }
+
+      @media (min-width: 1201px) and (max-width: 1500px) {
+
+         
+        #homePageBackgroundImageDivStyled {
+          background-image: url('/images/site/background_hu_4cf3bd6f878f2bff.png');
+        }
+      }
+
+      @media (min-width: 1501px) {
+
+         
+        #homePageBackgroundImageDivStyled {
+          background-image: url('/images/site/background.png');
+        }
+      }
+    }
+  </style>
+  <span class="on-the-fly-behavior"></span>
+  <div id="homePageBackgroundImageDivStyled" class="background container-fluid"></div>
+  <div class="container content text-center">
+    <img src="/images/author/avatar_hu_f8835b5b19397a6c.png" class="rounded-circle mx-auto d-block img-fluid" alt="Author Image" />
+    <h1 class="greeting"> Hi, I am Duy</h1>
+    
+    <div class="typing-carousel">
+      <span id="typed" class="typed"></span>
+      <span class="ityped-cursor"></span>
+    </div>
+    <ul id="typing-carousel-data">
+      
+      
+      <li>I am a Lead Gameplay Engineer</li>
+      
+      <li>I built Huli&#39;s combat and AI systems on UE 5.7</li>
+      
+      <li>I architect modular plugin frameworks in C&#43;&#43;</li>
+      
+      <li>I ship performance-critical gameplay at 60 FPS</li>
+      
+      
+    </ul>
+    
+    
+    
+    
+    
+    
+    <a href="#about" class="arrow-center" aria-label=" More - Duy"> <i
+        class="arrow bounce fa fa-chevron-down"></i></a>
+    
+    
+  </div>
+</div>
+    
+    
+      
+    
+
+    
+      
+      
+        
+          <div class="container-fluid section-holder d-flex bg-primary">
+            
+
+  
+
+
+
+
+  
+
+
+<div class="container anchor p-lg-5 about-section" id="about">
+  <div class="row pt-sm-2 pt-md-4 align-self-center">
+    
+    
+     <div class="col-sm-6"> 
+      <h3 class="p-1">Duy Tran</h3>
+      
+      <h5 class="p-1">
+        Lead Gameplay Engineer
+        
+        at <a href="" title="" target="_blank" rel="noopener"></a>
+        
+      </h5>
+      
+      <p class="p-1 text-justify">
+        <p>Lead Gameplay Engineer on <strong>Huli: Nine Tails of Vengeance</strong> — an action RPG built on
+Unreal Engine 5.7 targeting PC, PS5, and Xbox Series X. I architect and implement
+core combat systems, AI frameworks, and plugin infrastructure for a combat-driven
+gameplay experience.</p>
+<p>Previously shipped <strong>6 mobile titles</strong> (iOS/Android) as a Unity/C# developer,
+covering hyper-casual, puzzle, and simulation genres with App Store and Google Play releases.</p>
+<p>My technical focus areas include:</p>
+<ul>
+<li><strong>Combat Architecture</strong>: Custom GAS implementation with 7-stage damage pipeline, direction-aware parry, and visual combo editor</li>
+<li><strong>AI Frameworks</strong>: Hybrid State Tree + Behavior Tree system supporting 50+ concurrent entities at locked 60 FPS</li>
+<li><strong>Plugin Infrastructure</strong>: 19+ custom plugins following a strict three-tier dependency architecture</li>
+<li><strong>Performance Engineering</strong>: Console-grade optimization with async loading, AI LOD, and time-sliced coordination</li>
+</ul>
+
+      </p>
+      <div class="text-container ms-auto">
+        <ul class="social-link d-flex">
+          
+          <li>
+            
+              <a href="https://github.com/tnqduy" title="Github" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+            
+          </li>
+          
+          <li>
+            
+              <a href="" title="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+            
+          </li>
+          
+          <li>
+            
+              <a href="mailto:" title="Email" target="_blank" rel="noopener"><i class="fas fa-envelope"></i></a>
+            
+          </li>
+          
+        </ul>
+      </div>
+      
+      <a href="/files/resume.pdf" title="My resume" target="#"
+        ><button class="btn btn-dark">My resume</button></a
+      >
+      
+      
+    </div>
+    
+    <div class="col-sm-6 pt-5 ps-md-4 ps-sm-3 pt-sm-0">
+      <div class="row">
+        
+        
+        
+        
+          
+<div class="col-6 col-lg-4 p-2">
+  
+  
+    
+  
+  <div class="circular-progress ">
+    <span class="circular-progress-left">
+      <span
+        class="circular-progress-bar circular-progress-percentage-90"
+        
+          style="border-color: #6c5ce7;"
+        
+      ></span>
+    </span>
+    <span class="circular-progress-right">
+      <span
+      class="circular-progress-bar"
+      
+          style="border-color: #6c5ce7;"
+      
+      ></span>
+    </span>
+    <div class="circular-progress-value">Problem Solving</div>
+  </div>
+</div>
+
+        
+          
+<div class="col-6 col-lg-4 p-2">
+  
+  
+    
+  
+  <div class="circular-progress ">
+    <span class="circular-progress-left">
+      <span
+        class="circular-progress-bar circular-progress-percentage-85"
+        
+          style="border-color: #00cec9;"
+        
+      ></span>
+    </span>
+    <span class="circular-progress-right">
+      <span
+      class="circular-progress-bar"
+      
+          style="border-color: #00cec9;"
+      
+      ></span>
+    </span>
+    <div class="circular-progress-value">Team Collaboration</div>
+  </div>
+</div>
+
+        
+          
+<div class="col-6 col-lg-4 p-2">
+  
+  
+    
+  
+  <div class="circular-progress ">
+    <span class="circular-progress-left">
+      <span
+        class="circular-progress-bar circular-progress-percentage-80"
+        
+          style="border-color: #fd79a8;"
+        
+      ></span>
+    </span>
+    <span class="circular-progress-right">
+      <span
+      class="circular-progress-bar"
+      
+          style="border-color: #fd79a8;"
+      
+      ></span>
+    </span>
+    <div class="circular-progress-value">Communication</div>
+  </div>
+</div>
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+          </div>
+          
+          
+            
+          
+        
+      
+        
+          <div class="container-fluid section-holder d-flex bg-secondary">
+            
+
+  
+
+
+<div class="container-fluid anchor pb-5 skills-section" id="skills">
+  
+    <h1 class="text-center">
+        <span id="skills"></span>Skills</h1>
+  
+  
+  <div class="container d-flex-block">
+    <div class="row" id="primary-skills">
+  
+      
+      <div class="col-xs-12 col-sm-6 col-lg-4 pt-2 filtr-item"
+  data-category='all, '
+>
+  <a class="text-decoration-none" href="https://www.unrealengine.com/" title="Unreal Engine 5.7" target="_blank" rel="noopener">
+    <div class="card">
+      <div class="card-head d-flex">
+        
+          <h5 class="card-title">Unreal Engine 5.7</h5>
+        
+      </div>
+      <div class="card-body text-justify pt-1 pb-1">
+        <p class="card-text">Custom engine modifications, Live Coding workflows, and cross-platform shipping (PC/PS5/Xbox Series X).</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+    
+      <div class="col-xs-12 col-sm-6 col-lg-4 pt-2 filtr-item"
+  data-category='all, '
+>
+  <a class="text-decoration-none" >
+    <div class="card">
+      <div class="card-head d-flex">
+        
+          <h5 class="card-title">C&#43;&#43;</h5>
+        
+      </div>
+      <div class="card-body text-justify pt-1 pb-1">
+        <p class="card-text">Performance-critical gameplay code — 20k+ line character classes, template metaprogramming, and async patterns.</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+    
+      <div class="col-xs-12 col-sm-6 col-lg-4 pt-2 filtr-item"
+  data-category='all, '
+>
+  <a class="text-decoration-none" >
+    <div class="card">
+      <div class="card-head d-flex">
+        
+          <h5 class="card-title">Gameplay Ability System</h5>
+        
+      </div>
+      <div class="card-body text-justify pt-1 pb-1">
+        <p class="card-text">Custom ASC with ability data queueing, 7 attribute sets, dynamic cost/cooldown, and a 7-stage damage execution pipeline.</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+    
+      <div class="col-xs-12 col-sm-6 col-lg-4 pt-2 filtr-item"
+  data-category='all, '
+>
+  <a class="text-decoration-none" >
+    <div class="card">
+      <div class="card-head d-flex">
+        
+          <h5 class="card-title">AI Systems</h5>
+        
+      </div>
+      <div class="card-body text-justify pt-1 pb-1">
+        <p class="card-text">Hybrid State Tree + Behavior Tree framework with coordinator patterns, formation management, and 50+ concurrent AI at 60 FPS.</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+    
+      <div class="col-xs-12 col-sm-6 col-lg-4 pt-2 filtr-item"
+  data-category='all, '
+>
+  <a class="text-decoration-none" >
+    <div class="card">
+      <div class="card-head d-flex">
+        
+          <h5 class="card-title">Combat Architecture</h5>
+        
+      </div>
+      <div class="card-body text-justify pt-1 pb-1">
+        <p class="card-text">Universal damage pipeline, direction-aware parry, visual combo graph editor, and animation notify-driven hitbox system.</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+    
+      <div class="col-xs-12 col-sm-6 col-lg-4 pt-2 filtr-item"
+  data-category='all, '
+>
+  <a class="text-decoration-none" >
+    <div class="card">
+      <div class="card-head d-flex">
+        
+          <h5 class="card-title">Plugin Development</h5>
+        
+      </div>
+      <div class="card-body text-justify pt-1 pb-1">
+        <p class="card-text">19+ custom plugins following a three-tier dependency architecture (Generic, MainGame, GameFeature) with editor tooling.</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+    
+    </div>
+  </div>
+</div>
+
+          </div>
+          
+          
+            
+          
+        
+      
+        
+          <div class="container-fluid section-holder d-flex bg-primary">
+            
+
+  
+
+
+<div class="container-fluid anchor pb-5 projects-section" id="projects">
+  
+    <h1 class="text-center">
+        <span id="projects"></span>Projects</h1>
+  
+  <div class="container ms-auto text-center">
+    <div class="btn-group flex-wrap" role="group" id="project-filter-buttons-projects">
+      
+      <button type="button" class="btn btn-dark project-filtr-control" data-filter="all" data-section="projects">
+        All
+      </button>
+      
+      <button type="button" class="btn btn-dark project-filtr-control" data-filter="combat" data-section="projects">
+        Combat
+      </button>
+      
+      <button type="button" class="btn btn-dark project-filtr-control" data-filter="ai" data-section="projects">
+        AI
+      </button>
+      
+      <button type="button" class="btn btn-dark project-filtr-control" data-filter="architecture" data-section="projects">
+        Architecture
+      </button>
+      
+      <button type="button" class="btn btn-dark project-filtr-control" data-filter="mobile" data-section="projects">
+        Mobile
+      </button>
+      
+    </div>
+  </div>
+  <div class="container filtr-projects" data-section="projects">
+    <div class="row" id="project-card-holder-projects">
+      
+        <div
+  class="col-sm-12 col-md-6 col-lg-4 p-2 filtr-item"
+  data-category='all, combat,ai,architecture'
+>
+  <div class="card mt-1">
+    <div class="card">
+      <a href="/posts/huli-technical-showcase" target="_blank" rel="noopener">
+        
+        <div class="card-header">
+          <div>
+            <div class="d-flex">
+              
+              
+              <h5 class="card-title mb-0">Huli: Nine Tails of Vengeance</h5>
+            </div>
+            <div class="sub-title">
+              <span>Lead Gameplay Engineer</span>
+              <span>2024 - Present</span>
+            </div>
+          </div>
+        </div>
+      </a>
+      <div class="card-body text-justify pt-1 pb-2">
+        <p>Action RPG built on Unreal Engine 5.7 targeting PC, PS5, and Xbox Series X.
+Led development of combat architecture (GAS, 7-stage damage pipeline, direction-aware parry),
+hybrid AI framework (50+ concurrent entities at 60 FPS), and 19+ custom plugins
+powering a modular, scalable gameplay foundation.</p>
+        
+        <div class="project-card-footer">
+          
+            <div class="project-tags-holder">
+              
+                  <span class="btn badge btn-info">
+                    combat
+                  </span>
+              
+                  <span class="btn badge btn-info">
+                    ai
+                  </span>
+              
+                  <span class="btn badge btn-info">
+                    architecture
+                  </span>
+              
+            </div>
+          
+          <div class="project-btn-holder">
+            
+            <span>
+              <a
+                class="btn btn-outline-info btn-sm"
+                href="/posts/huli-technical-showcase"
+                target="#"
+                >Details</a
+              >
+            </span>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+        <div
+  class="col-sm-12 col-md-6 col-lg-4 p-2 filtr-item"
+  data-category='all, mobile'
+>
+  <div class="card mt-1">
+    <div class="card">
+      <a href="/posts/mobile-register-race" target="_blank" rel="noopener">
+        
+        <div class="card-head">
+          
+          
+            
+            
+              
+            
+            <img class="card-img-top" src="/images/projects/port_registerace_01_hu_dc834eba96d51988.png" alt="Register Race" />
+          
+        </div>
+        
+        <div class="card-header">
+          <div>
+            <div class="d-flex">
+              
+              
+              <h5 class="card-title mb-0">Register Race</h5>
+            </div>
+            <div class="sub-title">
+              <span>Game Developer</span>
+              <span>Shipped</span>
+            </div>
+          </div>
+        </div>
+      </a>
+      <div class="card-body text-justify pt-1 pb-2">
+        <p>3D casual mobile game where players join as a cashier and race against others.
+Built with Unity/C# for iOS and Android.</p>
+        
+        <div class="project-card-footer">
+          
+            <div class="project-tags-holder">
+              
+                  <span class="btn badge btn-info">
+                    mobile
+                  </span>
+              
+            </div>
+          
+          <div class="project-btn-holder">
+            
+            <span>
+              <a
+                class="btn btn-outline-info btn-sm"
+                href="/posts/mobile-register-race"
+                target="#"
+                >Details</a
+              >
+            </span>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+        <div
+  class="col-sm-12 col-md-6 col-lg-4 p-2 filtr-item"
+  data-category='all, mobile'
+>
+  <div class="card mt-1">
+    <div class="card">
+      <a href="/posts/mobile-2048-park" target="_blank" rel="noopener">
+        
+        <div class="card-head">
+          
+          
+            
+            
+              
+            
+            <img class="card-img-top" src="/images/projects/port_2048_01_hu_cf45c756a6c47a1a.png" alt="2048 Park" />
+          
+        </div>
+        
+        <div class="card-header">
+          <div>
+            <div class="d-flex">
+              
+              
+              <h5 class="card-title mb-0">2048 Park</h5>
+            </div>
+            <div class="sub-title">
+              <span>Game Developer</span>
+              <span>Shipped</span>
+            </div>
+          </div>
+        </div>
+      </a>
+      <div class="card-body text-justify pt-1 pb-2">
+        <p>A collection of 2048 puzzle game variants. Multiple game modes
+offering fresh takes on the classic 2048 formula.</p>
+        
+        <div class="project-card-footer">
+          
+            <div class="project-tags-holder">
+              
+                  <span class="btn badge btn-info">
+                    mobile
+                  </span>
+              
+            </div>
+          
+          <div class="project-btn-holder">
+            
+            <span>
+              <a
+                class="btn btn-outline-info btn-sm"
+                href="/posts/mobile-2048-park"
+                target="#"
+                >Details</a
+              >
+            </span>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+        <div
+  class="col-sm-12 col-md-6 col-lg-4 p-2 filtr-item"
+  data-category='all, mobile'
+>
+  <div class="card mt-1">
+    <div class="card">
+      <a href="/posts/mobile-climber" target="_blank" rel="noopener">
+        
+        <div class="card-head">
+          
+          
+            
+            
+              
+            
+            <img class="card-img-top" src="/images/projects/port_climber_01_hu_b69a3797e1936bf6.png" alt="Climber" />
+          
+        </div>
+        
+        <div class="card-header">
+          <div>
+            <div class="d-flex">
+              
+              
+              <h5 class="card-title mb-0">Climber</h5>
+            </div>
+            <div class="sub-title">
+              <span>Game Developer</span>
+              <span>Shipped</span>
+            </div>
+          </div>
+        </div>
+      </a>
+      <div class="card-body text-justify pt-1 pb-2">
+        <p>In-house climbing wall simulation 3D game. Players attempt to reach the finish
+goal without falling, featuring physics-based climbing mechanics.</p>
+        
+        <div class="project-card-footer">
+          
+            <div class="project-tags-holder">
+              
+                  <span class="btn badge btn-info">
+                    mobile
+                  </span>
+              
+            </div>
+          
+          <div class="project-btn-holder">
+            
+            <span>
+              <a
+                class="btn btn-outline-info btn-sm"
+                href="/posts/mobile-climber"
+                target="#"
+                >Details</a
+              >
+            </span>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+        <div
+  class="col-sm-12 col-md-6 col-lg-4 p-2 filtr-item"
+  data-category='all, mobile'
+>
+  <div class="card mt-1">
+    <div class="card">
+      <a href="/posts/mobile-assorted-detective" target="_blank" rel="noopener">
+        
+        <div class="card-head">
+          
+          
+            
+            
+              
+            
+            <img class="card-img-top" src="/images/projects/port_detective_01_hu_dd85873abad24376.png" alt="Assorted Detective" />
+          
+        </div>
+        
+        <div class="card-header">
+          <div>
+            <div class="d-flex">
+              
+              
+              <h5 class="card-title mb-0">Assorted Detective</h5>
+            </div>
+            <div class="sub-title">
+              <span>Game Developer</span>
+              <span>Shipped</span>
+            </div>
+          </div>
+        </div>
+      </a>
+      <div class="card-body text-justify pt-1 pb-2">
+        <p>2D hidden-object puzzle game challenging players to find requested items
+across increasingly complex scenes.</p>
+        
+        <div class="project-card-footer">
+          
+            <div class="project-tags-holder">
+              
+                  <span class="btn badge btn-info">
+                    mobile
+                  </span>
+              
+            </div>
+          
+          <div class="project-btn-holder">
+            
+            <span>
+              <a
+                class="btn btn-outline-info btn-sm"
+                href="/posts/mobile-assorted-detective"
+                target="#"
+                >Details</a
+              >
+            </span>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+        <div
+  class="col-sm-12 col-md-6 col-lg-4 p-2 filtr-item"
+  data-category='all, mobile'
+>
+  <div class="card mt-1">
+    <div class="card">
+      <a href="/posts/mobile-assassin" target="_blank" rel="noopener">
+        
+        <div class="card-head">
+          
+          
+            
+            
+              
+            
+            <img class="card-img-top" src="/images/projects/port_assasin_01_hu_559c6b92c86409e8.png" alt="Assassin" />
+          
+        </div>
+        
+        <div class="card-header">
+          <div>
+            <div class="d-flex">
+              
+              
+              <h5 class="card-title mb-0">Assassin</h5>
+            </div>
+            <div class="sub-title">
+              <span>Game Developer</span>
+              <span>Shipped</span>
+            </div>
+          </div>
+        </div>
+      </a>
+      <div class="card-body text-justify pt-1 pb-2">
+        <p>3D puzzle assassination game where players must eliminate enemies and
+save allies using limited resources and strategic planning.</p>
+        
+        <div class="project-card-footer">
+          
+            <div class="project-tags-holder">
+              
+                  <span class="btn badge btn-info">
+                    mobile
+                  </span>
+              
+            </div>
+          
+          <div class="project-btn-holder">
+            
+            <span>
+              <a
+                class="btn btn-outline-info btn-sm"
+                href="/posts/mobile-assassin"
+                target="#"
+                >Details</a
+              >
+            </span>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+        <div
+  class="col-sm-12 col-md-6 col-lg-4 p-2 filtr-item"
+  data-category='all, mobile'
+>
+  <div class="card mt-1">
+    <div class="card">
+      <a href="/posts/mobile-clay-art" target="_blank" rel="noopener">
+        
+        <div class="card-head">
+          
+          
+            
+            
+              
+            
+            <img class="card-img-top" src="/images/projects/port_clayart_01_hu_3f8bc6f681297885.png" alt="Clay Art" />
+          
+        </div>
+        
+        <div class="card-header">
+          <div>
+            <div class="d-flex">
+              
+              
+              <h5 class="card-title mb-0">Clay Art</h5>
+            </div>
+            <div class="sub-title">
+              <span>Game Developer</span>
+              <span>Shipped</span>
+            </div>
+          </div>
+        </div>
+      </a>
+      <div class="card-body text-justify pt-1 pb-2">
+        <p>ASMR-style mobile game where players arrange parts onto a clay cube
+and enjoy satisfying cutting mechanics. Built with Unity/C#.</p>
+        
+        <div class="project-card-footer">
+          
+            <div class="project-tags-holder">
+              
+                  <span class="btn badge btn-info">
+                    mobile
+                  </span>
+              
+            </div>
+          
+          <div class="project-btn-holder">
+            
+            <span>
+              <a
+                class="btn btn-outline-info btn-sm"
+                href="/posts/mobile-clay-art"
+                target="#"
+                >Details</a
+              >
+            </span>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+    </div>
+  </div>
+</div>
+
+          </div>
+          
+          
+            
+          
+        
+      
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+    
+      
+    
+  
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-start">
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Navigation</h5>
+          
+          <ul>
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/#about">About</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/#skills">Skills</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/#projects">Projects</a>
+                </li>
+              
+            
+          </ul>
+          
+        </div>
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Contact me:</h5>
+          <ul>
+            
+              
+                <li><a href=mailto: target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span></span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://github.com/tnqduy target="_blank" rel="noopener">
+                  <span><i class="fab fa-github"></i></span> <span>tnqduy</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://www.linkedin.com/in/%25!s%28%3cnil%3e%29 target="_blank" rel="noopener">
+                  <span><i class="fab fa-linkedin"></i></span> <span>Duy Tran</span>
+                </a></li>
+              
+            
+              
+                <li><a href=tel: target="_blank" rel="noopener">
+                  <span><i class="fas fa-phone-alt"></i></span> <span></span>
+                </a></li>
+              
+            
+          </ul>
+        </div>
+        
+        
+        
+      </div>
+    </div>
+    
+    
+    <hr />
+    <div class="container">
+      <div class="row text-start">
+        <div class="col-md-4">
+          <a id="theme" href="https://github.com/hugo-toha/toha" target="_blank" rel="noopener">
+            <img src="/images/theme-logo_hu_be7279b2506ad3f1.png" alt="Toha Theme Logo">
+            Toha
+          </a>
+        </div>
+        <div class="col-md-4 text-center">© 2026 Duy Tran. All rights reserved.</div>
+        <div class="col-md-4 text-end">
+          <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
+          <img
+            src="/images/hugo-logo.svg"
+            alt="Hugo Logo"
+            height="18"
+          />
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+
+
+    <script src="/application.f3b61efb897631b7aa2ccd460db03298b2faf197074381952d015543f6682ea0.js" integrity="sha256-87Ye&#43;4l2MbeqLM1GDbAymLL68ZcHQ4GVLQFVQ/ZoLqA=" defer></script>
+
+
+    
+    
+
+</body>
+</html>

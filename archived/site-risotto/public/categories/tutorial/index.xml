@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorial on Duy Tran — Lead Gameplay Engineer</title>
+    <link>http://localhost:1317/categories/tutorial/</link>
+    <description>Recent content in Tutorial on Duy Tran — Lead Gameplay Engineer</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1317/categories/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>UE5 C&#43;&#43; Best Practices for Gameplay Programming</title>
+      <link>http://localhost:1317/posts/ue5-cpp-best-practices/</link>
+      <pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1317/posts/ue5-cpp-best-practices/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1317/images/posts/ue5-cpp.png&#34; alt=&#34;Ue5 Cpp Best Practices&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;After years of working with Unreal Engine, I&amp;rsquo;ve compiled a list of best practices that have significantly improved code quality and team productivity.&lt;/p&gt;&#xA;&lt;h2 id=&#34;1-use-forward-declarations-aggressively&#34;&gt;1. Use Forward Declarations Aggressively&lt;/h2&gt;&#xA;&lt;p&gt;Minimize header dependencies by forward-declaring classes instead of including headers:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Bad - creates dependency chain&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;#34;Character/LQPlayerCharacter.h&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;#34;Abilities/LQGameplayAbility.h&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Good - minimal dependencies&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ALQPlayerCharacter&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ULQGameplayAbility&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This reduces compile times and prevents circular dependencies.&lt;/p&gt;&#xA;&lt;h2 id=&#34;2-prefer-interfaces-for-cross-system-communication&#34;&gt;2. Prefer Interfaces for Cross-System Communication&lt;/h2&gt;&#xA;&lt;p&gt;Instead of casting to concrete types, define interfaces:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

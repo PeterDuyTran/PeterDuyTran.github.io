@@ -1,0 +1,139 @@
+baseURL: http://localhost:1313/
+
+languageCode: en-us
+title: "Lead Gameplay Engineer — Huli: Nine Tails of Vengeance"
+
+# Use Hugo modules to add theme
+module:
+  imports:
+    - path: github.com/hugo-toha/toha/v4
+  mounts:
+    - source: assets
+      target: assets
+    - source: static
+      target: static
+    - source: layouts
+      target: layouts
+    - source: data
+      target: data
+    - source: content
+      target: content
+    - source: ./node_modules/flag-icon-css/flags
+      target: static/flags
+    - source: ./node_modules/@fontsource/mulish/files
+      target: static/files
+    - source: ./node_modules/katex/dist/fonts
+      target: static/fonts
+
+# Manage languages
+languages:
+  en:
+    languageName: English
+    weight: 1
+
+# Allow raw html in markdown file
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  tableOfContents:
+    startLevel: 2
+    endLevel: 6
+    ordered: false
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+enableEmoji: true
+
+# Site parameters
+params:
+  # Background image of the landing page
+  background: /images/site/background.png
+
+  # Logos disabled for now - add your own later
+  # logo:
+  #   main: /images/site/main-logo.png
+  #   inverted: /images/site/inverted-logo.png
+  #   favicon: /images/site/favicon.png
+
+  # Configure the number of section title visible in the top navbar
+  topNavbar:
+    maxVisibleSections: 5
+
+  # Configure various features of this theme
+  features:
+    # Enable dark theme
+    darkMode:
+      enable: true
+
+    # Enable and configure portfolio
+    portfolio:
+      enable: true
+
+    # Enable and configure blog posts
+    blog:
+      enable: true
+      shareButtons:
+        facebook: true
+        twitter: true
+        linkedin: true
+        reddit: true
+        email: true
+
+    # Disable comment for now
+    comment:
+      enable: false
+
+    # Disable analytics for local dev
+    analytics:
+      enabled: false
+
+    # Disable support buttons
+    support:
+      enable: false
+
+    # Table of Contents in reading page
+    toc:
+      enable: true
+
+    # Show tags under the post title
+    tags:
+      enable: true
+
+    # Disable flags (single language)
+    flags:
+      enable: false
+
+    # Enable syntax highlighting
+    syntaxHighlight:
+      enable: true
+      services:
+        hljs:
+          noHighlightRe: /^no-highlight$/i
+
+    # Enable copy code button
+    copyCodeButton:
+      enable: true
+
+    # Enable reading time
+    readingTime:
+      enable: true
+
+  # Footer configuration
+  footer:
+    enable: true
+    navigation:
+      enable: true
+      customMenus: false
+    contactMe:
+      enable: true
+    credentials:
+      enable: true
+    newsletter:
+      enable: false
+    disclaimer:
+      enable: false

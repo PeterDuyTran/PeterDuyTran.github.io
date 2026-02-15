@@ -1,0 +1,49 @@
+baseURL: "http://localhost:1316/"
+languageCode: en-us
+title: "Duy Tran — Lead Gameplay Engineer"
+theme: risotto
+
+sectionPagesMenu: main
+
+params:
+  theme:
+    palette: base16-dark
+
+  about:
+    title: "Duy Tran"
+    description: "Lead Gameplay Engineer — combat systems, AI frameworks, and plugin architecture on UE5."
+    logo: ""
+    logo_image: "images/author/avatar.png"
+
+  socialLinks:
+    - icon: "fa-brands fa-github"
+      title: "GitHub"
+      url: "https://github.com/tnqduy"
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 20
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 30
+
+taxonomies:
+  tag: tags
+  category: categories
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  tableOfContents:
+    startLevel: 2
+    endLevel: 3
+    ordered: true

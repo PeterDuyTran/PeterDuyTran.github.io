@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hyper-Casual on Lead Gameplay Engineer — Huli: Nine Tails of Vengeance</title>
+    <link>http://localhost:1313/tags/hyper-casual/</link>
+    <description>Recent content in Hyper-Casual on Lead Gameplay Engineer — Huli: Nine Tails of Vengeance</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/hyper-casual/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Register Race</title>
+      <link>http://localhost:1313/posts/mobile-register-race/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/mobile-register-race/</guid>
+      <description>&lt;div style=&#34;display:flex; gap:1em; flex-wrap:wrap; align-items:flex-start; margin-bottom:2em;&#34;&gt;
+&lt;div style=&#34;flex:1; min-width:250px;&#34;&gt;
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Register Race&lt;/strong&gt; is a 3D casual mobile game where players take on the role of a cashier racing against AI opponents. The game combines fast-paced racing mechanics with a fun cashier register mini-game — type the correct price to speed ahead of the competition.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Platform:&lt;/strong&gt; iOS / Android
+&lt;strong&gt;Engine:&lt;/strong&gt; Unity
+&lt;strong&gt;Language:&lt;/strong&gt; C#
+&lt;strong&gt;Genre:&lt;/strong&gt; Hyper-casual / Racing&lt;/p&gt;
+&lt;a href=&#34;https://apps.apple.com/app/id1576795443&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  View on App Store
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;div style=&#34;flex:1; min-width:250px; max-width:400px;&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/projects/port_registerace_02.png&#34; alt=&#34;Register Race Gameplay&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    
+  </channel>
+</rss>

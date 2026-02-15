@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Puzzle on Lead Gameplay Engineer — Huli: Nine Tails of Vengeance</title>
+    <link>http://localhost:1313/tags/puzzle/</link>
+    <description>Recent content in Puzzle on Lead Gameplay Engineer — Huli: Nine Tails of Vengeance</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/puzzle/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Assorted Detective</title>
+      <link>http://localhost:1313/posts/mobile-assorted-detective/</link>
+      <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/mobile-assorted-detective/</guid>
+      <description>&lt;div style=&#34;display:flex; gap:1em; flex-wrap:wrap; align-items:flex-start; margin-bottom:2em;&#34;&gt;
+&lt;div style=&#34;flex:1; min-width:250px;&#34;&gt;
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Assorted Detective&lt;/strong&gt; is a 2D hidden-object puzzle game that will challenge your brain. Players must find the requested items across increasingly complex and cluttered scenes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Platform:&lt;/strong&gt; iOS / Android
+&lt;strong&gt;Engine:&lt;/strong&gt; Unity
+&lt;strong&gt;Language:&lt;/strong&gt; C#
+&lt;strong&gt;Genre:&lt;/strong&gt; Puzzle / Hidden Object&lt;/p&gt;
+&lt;a href=&#34;https://apps.apple.com/app/id1562783371&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  View on App Store
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;div style=&#34;flex:1; min-width:250px; max-width:400px;&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/projects/port_detective_02.png&#34; alt=&#34;Assorted Detective Gameplay&#34;&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;key-features&#34;&gt;Key Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Hidden object gameplay&lt;/strong&gt; with hundreds of items to find&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Increasingly complex scenes&lt;/strong&gt; with layered difficulty&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Timed challenges&lt;/strong&gt; for competitive players&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hint system&lt;/strong&gt; for when you&amp;rsquo;re truly stuck&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>2048 Park</title>
+      <link>http://localhost:1313/posts/mobile-2048-park/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/mobile-2048-park/</guid>
+      <description>&lt;div style=&#34;display:flex; gap:1em; flex-wrap:wrap; align-items:flex-start; margin-bottom:2em;&#34;&gt;
+&lt;div style=&#34;flex:1; min-width:250px;&#34;&gt;
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;2048 Park&lt;/strong&gt; is a collection of 2048 puzzle game variants, offering multiple game modes and fresh takes on the classic 2048 formula. Players slide numbered tiles to combine them and reach higher values.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Platform:&lt;/strong&gt; iOS / Android
+&lt;strong&gt;Engine:&lt;/strong&gt; Unity
+&lt;strong&gt;Language:&lt;/strong&gt; C#
+&lt;strong&gt;Genre:&lt;/strong&gt; Puzzle / Casual&lt;/p&gt;
+&lt;a href=&#34;https://apps.apple.com/us/app/2048-park/id1557416639&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  View on App Store
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;div style=&#34;flex:1; min-width:250px; max-width:400px;&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/projects/port_2048_02.jpg&#34; alt=&#34;2048 Park Gameplay&#34;&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;key-features&#34;&gt;Key Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Multiple 2048 variants&lt;/strong&gt; in a single app&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Progression system&lt;/strong&gt; unlocking new game modes&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Clean UI&lt;/strong&gt; with smooth tile animations&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Score tracking&lt;/strong&gt; and personal bests&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Assassin</title>
+      <link>http://localhost:1313/posts/mobile-assassin/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/mobile-assassin/</guid>
+      <description>&lt;div style=&#34;display:flex; gap:1em; flex-wrap:wrap; align-items:flex-start; margin-bottom:2em;&#34;&gt;
+&lt;div style=&#34;flex:1; min-width:250px;&#34;&gt;
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Assassin&lt;/strong&gt; is a 3D puzzle game where players must eliminate enemies and save allies using limited bullets. Each level requires careful planning and strategic thinking to complete the objective.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Platform:&lt;/strong&gt; iOS / Android
+&lt;strong&gt;Engine:&lt;/strong&gt; Unity
+&lt;strong&gt;Language:&lt;/strong&gt; C#
+&lt;strong&gt;Genre:&lt;/strong&gt; Puzzle / Strategy&lt;/p&gt;
+&lt;a href=&#34;https://apps.apple.com/app/id1501654646&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  View on App Store
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;div style=&#34;flex:1; min-width:250px; max-width:400px;&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/projects/port_assasin_02.png&#34; alt=&#34;Assassin Gameplay&#34;&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;key-features&#34;&gt;Key Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Limited bullet mechanic&lt;/strong&gt; requiring strategic shot placement&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Enemy and ally identification&lt;/strong&gt; — avoid friendly fire&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Physics-based projectiles&lt;/strong&gt; with ricochet mechanics&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Escalating difficulty&lt;/strong&gt; across dozens of levels&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    
+  </channel>
+</rss>
