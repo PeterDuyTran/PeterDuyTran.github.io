@@ -7,19 +7,15 @@ weight: 30
   <div class="contact-info">
     <div class="contact-item">
       <i class="fas fa-phone"></i>
-      <a href="tel:+84000000000">+84 000 000 000</a>
-    </div>
-    <div class="contact-item">
-      <i class="fab fa-linkedin"></i>
-      <a href="https://linkedin.com/in/tnqduy" target="_blank" rel="noopener">linkedin.com/in/tnqduy</a>
+      <a href="tel:+840367649934">+84 0367649934</a>
     </div>
     <div class="contact-item">
       <i class="fas fa-envelope"></i>
-      <a href="mailto:duytran@example.com">duytran@example.com</a>
+      <a href="mailto:peter.duytran95@gmail.com">peter.duytran95@gmail.com</a>
     </div>
     <div class="contact-item">
-      <i class="fab fa-github"></i>
-      <a href="https://github.com/tnqduy" target="_blank" rel="noopener">github.com/tnqduy</a>
+      <i class="fab fa-linkedin"></i>
+      <a href="https://www.linkedin.com/in/duy-tran-peter-775475167/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </div>
   <div class="contact-cv">

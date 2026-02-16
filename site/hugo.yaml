@@ -42,10 +42,15 @@ params:
     facebook: false
     pinterest: false
 
+  email: "peter.duytran95@gmail.com"
+
   social:
-    - url: "https://github.com/tnqduy"
-      icon: "github"
+    - url: "https://www.linkedin.com/in/duy-tran-peter-775475167/"
+      icon: "linkedin-in"
       icon_pack: "fab"
+    - url: "mailto:peter.duytran95@gmail.com"
+      icon: "envelope"
+      icon_pack: "fas"
 
 languages:
   en:
@@ -53,6 +58,6 @@ languages:
     languageCode: en-us
     contentDir: content
     weight: 0
-    title: "Duy Tran — Lead Gameplay Engineer"
+    title: "Duy Tran — Senior Game Engineer"
     params:
-      description: "Lead Gameplay Engineer — combat systems, AI frameworks, and plugin architecture on Unreal Engine 5."
+      description: "Senior Game Engineer — combat systems, multiplayer gameplay, and scalable architecture on Unreal Engine and Unity."
