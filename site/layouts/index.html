@@ -101,7 +101,7 @@
                         <div class="container">
                             <h2 class="title is-2 has-text-centered">{{ .Title | markdownify }}</h2>
                             {{ if .Params.Image }}
-                            <div class="columns">
+                            <div class="columns about-columns">
                                 <div class="column is-one-third has-text-centered">
                                     {{ with $home.Resources.GetMatch .Params.Image }}
                                     {{ with .Resize "320x" }}
@@ -109,7 +109,7 @@
                                     {{ end }}
                                     {{ end }}
                                 </div>
-                                <div class="markdown column">
+                                <div class="markdown column about-content">
                                     {{ .Content }}
                                 </div>
                             </div>
@@ -265,6 +265,23 @@
     0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
     40% { transform: translateY(8px); }
     60% { transform: translateY(4px); }
+}
+
+/* About section: align content height with avatar */
+.about-columns {
+    align-items: stretch;
+}
+
+.about-columns .column.is-one-third {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 @media screen and (max-width: 768px) {
