@@ -16,14 +16,15 @@
             <div class="hero-head"></div>
             <div class="hero-body">
                 <div class="container has-text-centered">
-                    <h1 class="bold-title {{ if or (.Site.Params.fadeIn | default true) .Site.Params.fadeInIndex }}fade-in one{{ end }}">
-                        {{ .Title | markdownify }}
+                    <h1 class="bold-title">
+                        <span class="typing-container">
+                            <span class="typing-text">{{ .Title | markdownify }}</span>
+                        </span>
                     </h1>
-                    <div class="subtitle is-3 {{ if or (.Site.Params.fadeIn | default true) .Site.Params.fadeInIndex }}fade-in two{{ end }}">
-                        {{ .Content }}
-                    </div>
-                    <div class="{{ if or (.Site.Params.fadeIn | default true) .Site.Params.fadeInIndex }}fade-in three{{ end }}">
-                        {{ partial "home/social.html" . }}
+                    <div class="subtitle is-3">
+                        <span class="typing-container">
+                            <span class="typing-text typing-text-delay">Senior game engineer</span>
+                        </span>
                     </div>
                 </div>
             </div>

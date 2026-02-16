@@ -1,0 +1,35 @@
+.typing-container {
+  display: inline-block;
+}
+
+.typing-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid currentColor;
+  width: 0;
+  animation: typing 1.8s steps(18, end) forwards, blink-caret 0.6s step-end infinite, hide-caret 0s 1.8s forwards;
+}
+
+.typing-text-delay {
+  border-right-color: transparent;
+  animation: show-caret 0s 1.8s forwards, typing 1.6s steps(20, end) 1.8s forwards, blink-caret 0.6s step-end 1.8s infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: currentColor; }
+}
+
+@keyframes hide-caret {
+  to { border-right-color: transparent; }
+}
+
+@keyframes show-caret {
+  to { border-right-color: currentColor; }
+}

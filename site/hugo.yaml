@@ -21,6 +21,8 @@ params:
   showRSSButton: false
   fadeIn: true
   fadeInIndex: false
+  customCSS:
+    - "css/custom.css"
   dateFormat: "Jan 2, 2006"
 
   home:
