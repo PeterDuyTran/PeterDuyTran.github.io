@@ -7,11 +7,11 @@ weight: 30
   <div class="contact-info">
     <div class="contact-item">
       <i class="fas fa-phone"></i>
-      <a href="tel:+840367649934">+84 0367649934</a>
+      <a class="contact-obf" data-p1="+84 036" data-p2="764" data-p3="9934" data-type="tel">Loading...</a>
     </div>
     <div class="contact-item">
       <i class="fas fa-envelope"></i>
-      <a href="mailto:peter.duytran95@gmail.com">peter.duytran95@gmail.com</a>
+      <a class="contact-obf" data-p1="peter.duytran95" data-p2="gmail" data-p3="com" data-type="email">Loading...</a>
     </div>
     <div class="contact-item">
       <i class="fab fa-linkedin"></i>
@@ -25,58 +25,17 @@ weight: 30
   </div>
 </div>
 
-<style>
-.contact-grid {
-  max-width: 500px;
-  margin: 2rem auto;
-  text-align: left;
-}
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-  margin-bottom: 2rem;
-}
-.contact-item {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  font-size: 1.05rem;
-}
-.contact-item i {
-  width: 24px;
-  text-align: center;
-  color: #4fc3f7;
-  font-size: 1.1rem;
-}
-.contact-item a {
-  color: inherit;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-.contact-item a:hover {
-  color: #4fc3f7;
-}
-.contact-cv {
-  text-align: center;
-}
-.cv-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.8rem 2rem;
-  background: #4fc3f7;
-  color: #1a1a2e;
-  font-weight: 600;
-  border-radius: 4px;
-  text-decoration: none;
-  transition: background 0.2s ease, transform 0.1s ease;
-}
-.cv-button:hover {
-  background: #81d4fa;
-  transform: translateY(-1px);
-}
-.cv-button i {
-  font-size: 1.1rem;
-}
-</style>
+<script>
+document.querySelectorAll('.contact-obf').forEach(function(el) {
+  var type = el.dataset.type;
+  if (type === 'email') {
+    var addr = el.dataset.p1 + '@' + el.dataset.p2 + '.' + el.dataset.p3;
+    el.href = 'mailto:' + addr;
+    el.textContent = addr;
+  } else if (type === 'tel') {
+    var num = el.dataset.p1 + el.dataset.p2 + el.dataset.p3;
+    el.href = 'tel:' + num.replace(/\s/g, '');
+    el.textContent = num;
+  }
+});
+</script>
