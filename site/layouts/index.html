@@ -135,7 +135,7 @@
         <script>
             function update_localtime() {
                 const time = new Date().toLocaleTimeString('{{ .Site.Params.home.timeFormat }}', { timeZone: '{{ .Site.Params.home.timeZone }}', timeStyle: 'short' });
-                document.getElementById('time').innerHTML = time;
+                document.getElementById('time').textContent = time;
             }
             update_localtime();
             setInterval(update_localtime, 1000);

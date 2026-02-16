@@ -6,93 +6,94 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **Development server:**
 ```bash
-run-dev.bat                    # Starts Hugo server at http://localhost:1313 with draft content and live reload
+./dev.sh                       # Starts Hugo server at http://localhost:1313 with drafts and live reload
+# or
+./run-dev.sh                   # Same, with stale public dir cleanup
 ```
 
 **Production build:**
 ```bash
-build.bat                      # Builds minified site to site/public/
+./build.sh                     # Builds minified site to site/public/
 ```
 
 **Create new content:**
 ```bash
-new-blog.bat post-title        # Creates new blog post from archetype
-new-project.bat project-name   # Creates new portfolio project from archetype
+./new-blog.sh post-title       # Creates new blog post
+./new-project.sh project-name  # Creates new portfolio project (page bundle)
 ```
 
-**Theme CSS (from site/themes/blowfish/):**
+**Stop server:**
 ```bash
-npm run dev-windows            # Watch CSS changes during development
-npm run build-windows          # Production CSS build
+./stop.sh                      # Kills any lingering Hugo server processes
 ```
 
 ## Architecture Overview
 
-This is a Hugo static site using the Blowfish theme for a game developer portfolio.
+This is a Hugo static site using the **Introduction** theme for a game developer portfolio. The site is a single-page app with tab-based navigation (About, Projects, Blog, Contact).
 
 ```
 Portfolio/
-├── hugo-bin/                  # Hugo extended executable (Windows)
 ├── site/
-│   ├── config/_default/       # Site configuration (hugo.toml, params.toml, menus.en.toml)
-│   ├── content/               # Markdown content organized by section
-│   │   ├── portfolio/         # Project showcase pages
-│   │   ├── blog/              # Technical blog posts
-│   │   └── contact/           # Contact page
-│   ├── layouts/shortcodes/    # Custom Hugo shortcodes
-│   ├── static/                # Static assets (images/, videos/, cv/)
-│   ├── archetypes/            # Content templates (blog.md, portfolio.md)
-│   └── themes/blowfish/       # Blowfish theme (Git submodule)
+│   ├── hugo.yaml              # All site configuration (single file)
+│   ├── content/
+│   │   ├── home/              # Page bundle: index.md, about.md, contact.md, profile.jpg
+│   │   ├── projects/          # Page bundles per project (index.md + images)
+│   │   └── blog/              # Blog post markdown files
+│   ├── assets/
+│   │   ├── css/custom.css     # Typing animation styles
+│   │   └── images/            # Hugo-processed images (author/, projects/, site/)
+│   ├── static/images/         # Static images copied as-is
+│   ├── layouts/
+│   │   ├── index.html         # Main SPA layout (hero + tabs + inline CSS/JS)
+│   │   └── partials/home/     # Tab content: projects.html, blog.html
+│   ├── archetypes/default.md  # Content template
+│   └── themes/introduction/   # Git submodule (hugo-theme-introduction)
+├── archived/                  # Old theme experiments (gitignored)
+├── dev.sh / run-dev.sh        # Development server scripts
+├── build.sh                   # Production build script
+└── stop.sh                    # Kill Hugo server processes
 ```
 
-## Key Configuration Files
+## Key Configuration
 
-- **site/config/_default/hugo.toml** - Base URL, theme, pagination, syntax highlighting
-- **site/config/_default/params.toml** - Theme settings (colors, layouts, features, dark mode)
-- **site/config/_default/menus.en.toml** - Navigation structure
-- **site/config/_default/languages.en.toml** - Author info and language settings
+- **site/hugo.yaml** — Base URL, theme, params, social links, language settings
+- Theme: `introduction` (git submodule from victoriadrake/hugo-theme-introduction)
+- Dark/light mode: follows system preference (`themeStyle: auto`)
+- Content ordering: `weight` param in front matter (lower = first)
 
 ## Content Front Matter
 
-**Blog posts use YAML:**
+**Home sections (about.md, contact.md) use YAML:**
 ```yaml
 ---
-title: "Post Title"
-date: YYYY-MM-DD
-draft: true
-summary: "Brief overview"
-tags: ["UE5", "C++"]
+title: "About"
+image: "profile.jpg"    # optional, for avatar
+weight: 8               # tab ordering
 ---
 ```
 
-**Portfolio projects use YAML with weight for ordering:**
+**Projects use page bundles (projects/name/index.md):**
 ```yaml
 ---
 title: "Project Name"
-description: "Brief description"
-date: YYYY-MM-DD
-draft: true
-tags: ["UE5", "C++"]
-weight: 10
+description: "Brief description shown in project preview"
+weight: 1
+project_timeframe: "2023 - 2024"    # optional
 ---
 ```
 
-## Custom Shortcodes
+## Layout Architecture
 
-**video-card** (`site/layouts/shortcodes/video-card.html`) - Interactive card that shows thumbnail and plays video on hover:
-```markdown
-{{< video-card
-    title="Project Name"
-    thumbnail="/images/thumb.jpg"
-    video="/videos/teaser.mp4"
-    description="Brief description"
-    link="/portfolio/project"
->}}
-```
+The site uses a custom single-page layout (`site/layouts/index.html`) that:
+- Renders a fullscreen hero with typing animation
+- Builds tab navigation from home page resources + blog/projects sections
+- Each tab shows a panel rendered by its respective partial
+- Projects partial (`partials/home/projects.html`) has an interactive list/preview switcher
+- Tab state is synced with URL hash for deep linking
 
 ## Theme Customization
 
-- Dark mode is always enabled (configured in params.toml)
-- Color scheme uses CSS variables: `--color-neutral-*`, `--color-primary-*`, `--color-secondary-*`
-- Tailwind CSS with typography, forms, and scrollbar plugins
-- Override theme templates by placing files in site/layouts/ matching theme structure
+- Override theme templates by placing files in `site/layouts/` matching theme structure
+- Custom CSS goes in `site/assets/css/custom.css`
+- Accent color: `#4fc3f7` (light blue) used across tabs, indicators, and contact links
+- Images: use Hugo's image processing via page resources (`.Resources.GetMatch` + `.Resize`)

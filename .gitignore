@@ -18,5 +18,8 @@ Thumbs.db
 Desktop.ini
 .DS_Store
 
+# Archived theme experiments
+archived/
+
 # Claude Code
 .claude/
