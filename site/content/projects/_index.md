@@ -1,6 +1,6 @@
 ---
 title: "Projects"
-weight: 10
+weight: 1
 ---
 
 A selection of shipped games and technical projects spanning Unreal Engine and Unity.
