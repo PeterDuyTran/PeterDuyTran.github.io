@@ -1,6 +1,6 @@
 ---
 title: "Climber"
-description: "In-house climbing wall simulation 3D game with physics-based mechanics."
+description: "3D climbing simulation with physics-based wall traversal."
 weight: 5
 resources:
   - src: featured.png

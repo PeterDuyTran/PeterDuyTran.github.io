@@ -1,6 +1,6 @@
 ---
 title: "Clay Art"
-description: "ASMR-style mobile game with satisfying clay cutting mechanics."
+description: "ASMR-inspired mobile game centered on satisfying clay cutting."
 weight: 8
 resources:
   - src: featured.png

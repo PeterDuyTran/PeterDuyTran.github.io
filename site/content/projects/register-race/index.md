@@ -1,6 +1,6 @@
 ---
 title: "Register Race"
-description: "3D casual mobile game — race as a cashier against other players."
+description: "3D casual racer where players compete as cashiers."
 weight: 3
 resources:
   - src: featured.png

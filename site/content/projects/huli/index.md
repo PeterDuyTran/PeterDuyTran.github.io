@@ -1,6 +1,6 @@
 ---
 title: "Huli: Nine Tails of Vengeance"
-description: "3D Hack n' slash action game using Unreal Engine"
+description: "3D hack-and-slash action game built with Unreal Engine."
 weight: 1
 resources:
   - src: featured.jpg

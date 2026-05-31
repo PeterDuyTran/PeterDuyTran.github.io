@@ -1,6 +1,6 @@
 ---
 title: "Assorted Detective"
-description: "2D hidden-object puzzle game with increasingly complex scenes."
+description: "2D hidden-object puzzle game with escalating scene complexity."
 weight: 6
 resources:
   - src: featured.png

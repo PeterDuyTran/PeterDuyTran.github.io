@@ -1,6 +1,6 @@
 ---
 title: "Assassin"
-description: "3D puzzle assassination game with strategic planning and limited resources."
+description: "3D puzzle assassination game with tactical shot planning."
 weight: 7
 resources:
   - src: featured.png

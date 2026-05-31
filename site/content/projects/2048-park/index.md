@@ -1,6 +1,6 @@
 ---
 title: "2048 Park"
-description: "A collection of 2048 puzzle game variants with multiple game modes."
+description: "2048 puzzle collection with multiple game modes."
 weight: 4
 resources:
   - src: featured.jpg

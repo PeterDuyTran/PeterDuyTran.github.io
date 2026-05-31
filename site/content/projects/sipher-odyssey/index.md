@@ -1,6 +1,6 @@
 ---
 title: "Sipher Odyssey"
-description: "Multiplayer rogue-like shooter on mobile with real-time co-op gameplay."
+description: "Multiplayer rogue-like shooter with real-time co-op combat."
 weight: 2
 resources:
   - src: featured.jpg
