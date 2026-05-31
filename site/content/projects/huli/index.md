@@ -1,6 +1,6 @@
 ---
 title: "Huli: Nine Tails of Vengeance"
-description: "Action RPG on UE5 — combat architecture, AI frameworks, and 19+ custom plugins."
+description: "3D Hack n' slash action game using Unreal Engine"
 weight: 1
 resources:
   - src: featured.jpg
