@@ -10,6 +10,8 @@ Currently a **Senior Game Engineer & Gameplay Lead**, building 3D multiplayer RP
 
 - GAS-based combat systems, multiplayer gameplay, and interaction object systems
 - System design, coding architecture, and performance optimization
+- Daily AI-assisted workflows for coding, research, and debugging
+- Agent/sub-agent setup; Claude CLI, Codex CLI, OpenCode, and Pi
 - Shipped multiple mobile titles across hyper-casual, puzzle, and simulation genres
 - VR development for Apple Vision Pro platform
 - Team leadership, mentoring, and technical hiring
